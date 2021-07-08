@@ -1,6 +1,6 @@
 mvn archetype:generate \
-	-DgroupId=com.u14 \
-	-DartifactId=sandbox.java.modbus \
-	-DarchetypeArtifactId=maven-archetype-quickstart \
-	-DarchetypeVersion=1.4 \
-	-DinteractiveMode=false
+	-D groupId=com.u14 \
+	-D artifactId=sandbox.java.modbus \
+	-D archetypeArtifactId=maven-archetype-quickstart \
+	-D archetypeVersion=1.4 \
+	-D interactiveMode=false
