@@ -28,23 +28,12 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/net.wimpi/jamod/1.2 -->
-        <!-- dependency>
-            <groupId>net.wimpi</groupId>
-            <artifactId>jamod</artifactId>
-            <version>1.2</version>
-        </dependency -->
         <!-- https://mvnrepository.com/artifact/com.ghgande/j2mod -->
         <dependency>
             <groupId>com.ghgande</groupId>
             <artifactId>j2mod</artifactId>
             <version>2.7.0</version>
         </dependency>
-        <!-- dependency>
-          <groupId>com.infiniteautomation</groupId>
-          <artifactId>modbus4j</artifactId>
-          <version>3.0.6</version>
-        </dependency -->
     </dependencies>
 
     <build>
