@@ -3,4 +3,5 @@ mvn archetype:generate \
 	-D artifactId=sandbox.java.modbus \
 	-D archetypeArtifactId=maven-archetype-quickstart \
 	-D archetypeVersion=1.4 \
-	-D interactiveMode=false
+	-D interactiveMode=false \
+	-D basedir=./

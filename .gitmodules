@@ -1,0 +1,3 @@
+[submodule "j2mod"]
+	path = j2mod
+	url = https://github.com/steveohara/j2mod.git

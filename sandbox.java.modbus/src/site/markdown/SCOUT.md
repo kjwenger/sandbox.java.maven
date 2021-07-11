@@ -1,5 +1,0 @@
-- [stackoverflow.com: Need modbus Java library](https://stackoverflow.com/questions/4689381/need-modbus-java-library)
-- [sourceforge.net: Java Modbus Library (jamod)](http://jamod.sourceforge.net/index.html)
-- [stackoverflow.com: How to use markdown for maven project site?](https://stackoverflow.com/questions/14829190/how-to-use-markdown-for-maven-project-site)
-- [Modbus4J - Open Source Modbus Library](https://mango-os.com/modbus4j-open-source-modbus-library)
-- [github.com: infiniteautomation/modbus4j](https://github.com/infiniteautomation/modbus4j)
