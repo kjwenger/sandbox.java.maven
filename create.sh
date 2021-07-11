@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 mvn archetype:generate \
 	-D groupId=com.u14 \
 	-D artifactId=sandbox.java.modbus \
