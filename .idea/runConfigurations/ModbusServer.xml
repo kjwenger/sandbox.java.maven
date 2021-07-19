@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ModbusServer" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_291 (Oracle)" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="com.u14.ModbusServer" />
+    <module name="sandbox.java.modbus" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

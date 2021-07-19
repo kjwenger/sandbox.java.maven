@@ -9,7 +9,7 @@ import com.ghgande.j2mod.modbus.util.Observer;
 public class ModbusServer {
 
     private static final int UNIT_ID = 15;
-    private static final int PORT = 2502;
+    private static final int PORT = 4502;
 
     private static Observer observer = new ObserverMonitor();
     private static Observable updatedRegister;
