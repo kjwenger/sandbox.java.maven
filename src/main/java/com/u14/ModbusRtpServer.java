@@ -20,6 +20,7 @@ public class ModbusRtpServer extends AbstractModbusServer {
             }
 
             createSerialSlave();
+            System.out.println(String.format("Modbus RTU server running on port %s", slavePortName));
         } catch (Exception e) {
             e.printStackTrace();
         }

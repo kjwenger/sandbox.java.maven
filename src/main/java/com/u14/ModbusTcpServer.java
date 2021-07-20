@@ -10,6 +10,7 @@ public class ModbusTcpServer extends AbstractModbusServer {
     public static void main(String[] args) {
         try {
             createTcpSlave();
+            System.out.println(String.format("Modbus TCP server running on port %d", PORT));
         } catch (Exception e) {
             e.printStackTrace();
         }
