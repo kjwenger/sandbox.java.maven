@@ -5,9 +5,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 /**
- * Unit test for simple ModbusServer.
+ * Unit test for simple ModbusTcpServer.
  */
-public class ModbusServerTest
+public class ModbusTcpServerTest
 {
     /**
      * Rigorous Test :-)

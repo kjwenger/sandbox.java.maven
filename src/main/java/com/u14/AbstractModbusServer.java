@@ -1,43 +1,18 @@
 package com.u14;
 
 import com.ghgande.j2mod.modbus.procimg.*;
-import com.ghgande.j2mod.modbus.slave.ModbusSlave;
-import com.ghgande.j2mod.modbus.slave.ModbusSlaveFactory;
 import com.ghgande.j2mod.modbus.util.Observable;
 import com.ghgande.j2mod.modbus.util.Observer;
 
-public class ModbusServer {
+public class AbstractModbusServer {
 
-    private static final int UNIT_ID = 15;
-    private static final int PORT = 4502;
+    protected static final int UNIT_ID = 15;
 
     private static Observer observer = new ObserverMonitor();
-    private static Observable updatedRegister;
-    private static String updatedArgument;
+    protected static Observable updatedRegister;
+    protected static String updatedArgument;
 
-    public static void main(String[] args) {
-        try {
-            createTcpSlave();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private static ModbusSlave createTcpSlave() throws Exception {
-        ModbusSlave slave;
-        try {
-            // Create a TCP slave on the 'all interfaces' address 0.0.0.0
-            slave = ModbusSlaveFactory.createTCPSlave(PORT, 20);
-            slave.addProcessImage(UNIT_ID, getSimpleProcessImage());
-            slave.open();
-        }
-        catch (Exception x) {
-            throw new Exception(x.getMessage());
-        }
-        return slave;
-    }
-
-    private static SimpleProcessImage getSimpleProcessImage() {
+    protected static SimpleProcessImage getSimpleProcessImage() {
         // Create a Slave that we can use to exercise each and every register type
 
         SimpleProcessImage spi = new SimpleProcessImage(UNIT_ID);
@@ -63,7 +38,7 @@ public class ModbusServer {
         spi.addDigitalIn(65535, new SimpleDigitalIn(true));
 
         // A couple of files
-        spi.addFile(new com.ghgande.j2mod.modbus.procimg.File(0, 10)
+        spi.addFile(new File(0, 10)
                 .setRecord(0, new Record(0, 10))
                 .setRecord(1, new Record(1, 10))
                 .setRecord(2, new Record(2, 10))
@@ -74,7 +49,7 @@ public class ModbusServer {
                 .setRecord(7, new Record(7, 10))
                 .setRecord(8, new Record(8, 10))
                 .setRecord(9, new Record(9, 10)));
-        spi.addFile(new com.ghgande.j2mod.modbus.procimg.File(1, 20)
+        spi.addFile(new File(1, 20)
                 .setRecord(0, new Record(0, 10))
                 .setRecord(1, new Record(1, 20))
                 .setRecord(2, new Record(2, 20))
