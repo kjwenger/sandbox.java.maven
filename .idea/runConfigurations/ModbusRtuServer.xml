@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="ModbusRtuServer" type="Application" factoryName="Application">
     <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_291 (Oracle)" />
-    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="com.u14.ModbusTcpServer" />
     <module name="sandbox.java.modbus" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     <method />
   </configuration>
 </component>
